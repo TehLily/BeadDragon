@@ -1,0 +1,93 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+
+   background-image: url("../images/background/spikes-bground.jpg");
+   background-color: aliceblue;
+   font-family: 'Roboto Serif',"Times New Roman",serif;
+   font-size: 20px;
+   color: steelblue;
+}
+
+nav a {
+   color: navy;   
+   text-decoration: none;
+}
+
+nav a:hover {
+   background-color:lavender;
+}
+
+.active {
+  background-color: lemonchiffon;
+}
+
+
+h1 {
+   color: #483D8B;
+   text-align:center;
+   font-size: 2.5em;
+   font-family: 'Red Hat Mono', monospace;
+}
+
+h2 {
+   color: maroon;
+   text-align:center;
+   font-size: 2em;
+   font-family: 'Macondo', cursive;
+}
+
+
+.clearfix::after {
+   content: "";
+   clear: both;
+   display: table;
+}
+
+.img-left {
+   float: left;
+   padding: 5px;
+   margin: 10px;
+}
+
+.maroon {
+   border: 8px groove maroon;
+   margin: 5px;
+   padding: 10px;
+}
+
+.blank-box {
+   border: none;
+   margin: 5px;
+   padding: 5px;
+}
+
+
+.wood-shadow {
+   box-shadow: 10px 10px saddlebrown;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   
+}
+
+.flex-container {
+  display: flex;
+   flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: navy;
+  
+}
+
+.flex-container .box {
+     background-image: url("../Images/background/ecailles-bground.jpg");
+  background-color: aliceblue;
+  margin: 10px;
+  text-align: center;
+}
+
+
+
+
