@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reCAPTCHA Widget Demo</title>
+        <!--author: Lily Ellison
+	date: October 25, 2023-->
+    <meta name:"description" content="Demo of reCAPTCHA widget.">
+    <meta name="keywords"
+        content="WDV351, DMACC, Web Development, Website Application Components, Homework, Unit 6, reCAPTCHA, widget, checkbox, Lily Ellison" />
+
+    <link rel="stylesheet" href="../../css/main_style.css" />
+    <link rel="stylesheet" href="../Unit05/TableauStyle.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Macondo&family=Red+Hat+Mono&family=Roboto+Serif:opsz@8..144&display=swap"
+        rel="stylesheet" />
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+    </head>
+
+    <body>
+
+        <h1>Unit 6</h1>
+        <h2>reCAPTCHA Widget</h2>
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="30" rows="5" required></textarea>
+            <div class="g-recaptcha" data-sitekey="6LdoZ8coAAAAAGGMuVYXUh_nM0Iwu-MUMRWUT-2e"></div>
+            <button type="submit">Submit</button>
+        </form>
+
+    </body>
+    
+    <script src="widget.js"></script>

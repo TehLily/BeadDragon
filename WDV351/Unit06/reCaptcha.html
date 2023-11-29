@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reCAPTCHA Demo</title>
+        <!--author: Lily Ellison
+	date: October 24, 2023-->
+    <meta name:"description" content="Demo of reCAPTCHA.">
+    <meta name="keywords"
+        content="WDV351, DMACC, Web Development, Website Application Components, Homework, Unit 6, reCAPTCHA, Lily Ellison" />
+
+    <link rel="stylesheet" href="../../css/main_style.css" />
+    <link rel="stylesheet" href="../Unit05/TableauStyle.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Macondo&family=Red+Hat+Mono&family=Roboto+Serif:opsz@8..144&display=swap"
+        rel="stylesheet" />
+
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfjascoAAAAAKTqjsKxCxhCTMRjK18Or9Ae3bML" async defer></script>
+    
+    </head>
+
+    <body>
+
+        <h1>Unit 6</h1>
+        <h2>reCAPTCHA</h2>
+
+        <form id="demo-form">
+        <p>Click button to submit reCAPTCHA.</p>
+            <button class="g-recaptcha" data-sitekey="6LfjascoAAAAAKTqjsKxCxhCTMRjK18Or9Ae3bML" data-callback='onSubmit' data-action='submit' type="submit">Submit</button>
+        </form>
+
+    </body>
+    
+    <script src="reCaptcha.js"></script>

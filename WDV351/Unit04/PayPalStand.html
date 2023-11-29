@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C8F1LKJXYL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-C8F1LKJXYL");
+    </script>
+    <meta charset="UTF-8" />
+    <title>Unit 4 - Standard PayPal</title>
+    <!--author: Lily Ellison
+	date: September 22, 2023-->
+    <meta name:"description" content="Standard PayPal Options.">
+    <meta name="keywords"
+        content="WDV351, DMACC, Web Development, Website Application Components, Homework, Unit 4, PayPal, BuyNow, Buttons, Lily Ellison" />
+
+    <link rel="stylesheet" href="../../css/main_style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Macondo&family=Red+Hat+Mono&family=Roboto+Serif:opsz@8..144&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .box {
+            flex: 100%;
+        }
+        @media only screen and (min-width: 200px) {
+            .box {
+                flex: 50%;
+            }
+        }
+        @media screen and (min-width: 400px) {
+            .box {
+                flex: 40%;
+            }
+        }
+        @media screen and (min-width: 600px) {
+            .box {
+                flex: 30%;
+            }
+        }
+        @media screen and (min-width: 800px) {
+            .box {
+                flex: 20%;
+            }
+        }
+        @media screen and (min-width: 1000px) {
+            .box {
+                flex: 10%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- PayPal Button JS -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AdvUevUdbPL7SpK8EwtX36I--eGUY_vldihb5jFWcOadmATE5oleQLgxEVILQ89RT_k9xecKP3zegKDr&currency=USD"></script>
+    <h1>Unit 4</h1>
+    <h2>Standard PayPal Options</h2>
+    <div class="flex-container">
+        <div class="box">
+            $5 Buy Now Button:
+            <div class="maroon" id="paypal-button-container01" style="margin:auto" >
+                <script>
+                paypal.Buttons({
+                    style: {
+                        label: "buynow"
+                  }
+                }).render('#paypal-button-container01');
+                </script>
+            </div>
+        </div>
+        <div class="box">
+            $10 Buy Now Button (with IA tax):
+            <div class="maroon" id="paypal-button-container02" style="margin:auto" >
+                <script>
+                paypal.Buttons({
+                    style: {
+                        label: "buynow"
+                  }
+                }).render('#paypal-button-container02');
+                </script>
+            </div>
+        </div>
+        <div class="box">
+            $15 Buy Now Button (with $7.95 Shipping and Handling fee):
+            <div class="maroon" id="paypal-button-container03" style="margin:auto" >
+                <script>
+                paypal.Buttons({
+                    style: {
+                        label: "buynow"
+                  }
+                }).render('#paypal-button-container03');
+                </script>
+            </div>
+        </div>
+        <div class="box">
+            $30 Buy Now Button (with Formatting Options):
+            <div class="maroon" id="paypal-button-container04" style="margin:auto" >
+                <script>
+                paypal.Buttons({
+                    style: {
+                        label: "buynow"
+                  }
+                }).render('#paypal-button-container04');
+                </script>
+            </div>
+        </div>
+        <div class="box">
+            $20 Buy Now Button with Multiple Options:
+            <div class="maroon" id="paypal-button-container05" style="margin:auto" >
+                <script>
+                paypal.Buttons({
+                    style: {
+                        label: "buynow"
+                  }
+                }).render('#paypal-button-container05');
+                </script>
+            </div>
+        </div>
+        <div class="box">
+            $25 Buy Now Button with Special Instructions:
+            <div class="maroon" id="paypal-button-container06" style="margin:auto" >
+                <script>
+                paypal.Buttons({
+                    style: {
+                        label: "buynow"
+                  }
+                }).render('#paypal-button-container06');
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <footer style="margin: 20px">
+        <a href="../wdv351Homework.html">Return to WDV351 Homework Page</a>
+        <a href="../../index.html">Return to The Bead Dragon</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C8F1LKJXYL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-C8F1LKJXYL");
+    </script>
+    <meta charset="UTF-8" />
+    <title>Unit 4 - Subscriptions</title>
+    <!--author: Lily Ellison
+	date: September 25, 2023-->
+    <meta name:"description" content="Subscriptions.">
+    <meta name="keywords"
+        content="WDV351, DMACC, Web Development, Website Application Components, Homework, Unit 4, PayPal, Subscriptions, Buttons, Lily Ellison" />
+
+    <link rel="stylesheet" href="../../css/main_style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Macondo&family=Red+Hat+Mono&family=Roboto+Serif:opsz@8..144&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .box {
+            flex: 100%;
+        }
+        @media only screen and (min-width: 200px) {
+            .box {
+                flex: 50%;
+            }
+        }
+        @media screen and (min-width: 400px) {
+            .box {
+                flex: 40%;
+            }
+        }
+        @media screen and (min-width: 600px) {
+            .box {
+                flex: 30%;
+            }
+        }
+        @media screen and (min-width: 800px) {
+            .box {
+                flex: 20%;
+            }
+        }
+        @media screen and (min-width: 1000px) {
+            .box {
+                flex: 10%;
+            }
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures optimal rendering on mobile devices. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Optimal Internet Explorer compatibility -->
+</head>
+<body>
+    <h1>Unit 4</h1>
+    <h2>Subscriptions</h2>
+    <div class="flex-container">
+        <div class="box">
+            Quarterly Membership:
+            <div class="maroon" style="margin:auto" >
+                Quarterly Membership Subscription - Dragon Watcher (3 months for $15):
+                <div id="paypal-button-container-P-532752018E542690UMUIY2UA"></div>
+                <script src="https://www.paypal.com/sdk/js?client-id=AdvUevUdbPL7SpK8EwtX36I--eGUY_vldihb5jFWcOadmATE5oleQLgxEVILQ89RT_k9xecKP3zegKDr&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+                <script>
+                    paypal.Buttons({
+                        style: {
+                            shape: 'pill',
+                            color: 'gold',
+                            layout: 'vertical',
+                            label: 'subscribe'
+                        },
+                        createSubscription: function(data, actions) {
+                            return actions.subscription.create({
+                                /* Creates the subscription */
+                                plan_id: 'P-532752018E542690UMUIY2UA'
+                            });
+                        },
+                        onApprove: function(data, actions) {
+                            alert(data.subscriptionID); // You can add optional success message for the subscriber here
+                        }
+                    }).render('#paypal-button-container-P-532752018E542690UMUIY2UA'); // Renders the PayPal button
+                </script>
+            </div>
+        </div>
+        <div class="box">
+            Yearly Subscription:
+            <div class="maroon" style="margin:auto" >
+                Yearly subscription to Hear Ye! Hear Ye! The Bead Dragon Newsletter (1 year for $10):
+                <div id="paypal-button-container-P-3GU57856CE034901PMUIY74Q"></div>
+                <!--<script src="https://www.paypal.com/sdk/js?client-id=AdvUevUdbPL7SpK8EwtX36I--eGUY_vldihb5jFWcOadmATE5oleQLgxEVILQ89RT_k9xecKP3zegKDr&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>-->
+                <script>
+                    paypal.Buttons({
+                        style: {
+                            shape: 'pill',
+                            color: 'gold',
+                            layout: 'vertical',
+                            label: 'subscribe'
+                        },
+                        createSubscription: function(data, actions) {
+                            return actions.subscription.create({
+                                /* Creates the subscription */
+                                plan_id: 'P-3GU57856CE034901PMUIY74Q'
+                            });
+                        },
+                        onApprove: function(data, actions) {
+                            alert(data.subscriptionID); // You can add optional success message for the subscriber here
+                        }
+                    }).render('#paypal-button-container-P-3GU57856CE034901PMUIY74Q'); // Renders the PayPal button
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <footer style="margin: 20px">
+        <a href="../wdv351Homework.html">Return to WDV351 Homework Page</a>
+        <a href="../../index.html">Return to The Bead Dragon</a>
+    </footer>
+</body>
+
+</html>
+

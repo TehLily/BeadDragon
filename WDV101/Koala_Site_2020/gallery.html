@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Koala Gallery Page</title>
+<!--author: Lily Ellison
+	date: October 18, 2022-->
+<meta name="description" content="Gallery for Koala Bear National Information Center.">
+<meta name="keywords" content="koala, koala bear, information center, foundation, gallery, photos, KBNIC">
+
+<link rel="stylesheet" href="css/main_style.css">
+<link rel="stylesheet" href="css/structure.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo&family=Neucha&family=Patua+One&family=Roboto+Slab&display=swap" rel="stylesheet"> 
+
+<style>
+
+figure {
+   border: 2px solid darkgreen;
+   border-radius: 10px;
+   padding: 2px;
+   margin: 10px;
+}
+
+figure:hover {
+   border: 5px solid forestgreen;
+}
+
+figcaption {
+   color: black;
+   padding: 1px;
+   text-align: center;  
+}
+
+.container {
+  position: relative;
+  display: none;
+}
+
+</style> 
+
+</head>
+<body>
+
+<header>
+<h1>Koala Bear National Information Center</h1>
+
+<nav class="clearfix">
+<a href="index.html">Home</a>
+<a href="save_koalas.html">Save Koalas!</a>
+<a href="faq.html">FAQ</a>
+<a class="active" href="gallery.html">Gallery</a>
+<a href="adopt.html">Adopt</a>
+<a href="contact.html">Contact Us</a>
+</nav>
+
+<img src="images/koala_banner.jpg" alt="Koala Banner" width="100%">
+
+</header>
+
+
+<h1>Photo Gallery</h1>
+
+<div class="flex-gallery">
+
+<figure class="flex-fig">
+   <img src="images/koala_gallery/ella.jpg" alt="Ella" onclick="myFunction(this);">
+   <figcaption>Ella</figcaption>
+</figure>
+
+<figure class="flex-fig">
+   <img src="images/koala_gallery/grant.jpg" alt="Grant" onclick="myFunction(this);">
+   <figcaption>Grant</figcaption>
+</figure>
+
+<figure class="flex-fig">
+   <img src="images/koala_gallery/jams.jpg" alt="Jams" onclick="myFunction(this);">
+   <figcaption>Jams</figcaption>
+</figure>
+
+<figure class="flex-fig">
+   <img src="images/koala_gallery/jilley_and_baby.jpg" alt="Jilley and Baby" onclick="myFunction(this);">
+   <figcaption>Jilley and Baby</figcaption>
+</figure>
+
+<figure class="flex-fig">
+   <img src="images/koala_gallery/koala_c.jpg" alt="Koala C" onclick="myFunction(this);">
+   <figcaption>Koala C</figcaption>
+</figure>
+
+<figure class="flex-fig">
+   <img src="images/koala_gallery/lucy.jpg" alt="Lucy" onclick="myFunction(this);">
+   <figcaption>Lucy</figcaption>
+</figure>
+
+<figure class="flex-fig">
+   <img src="images/koala_gallery/miffy.jpg" alt="Miffy" onclick="myFunction(this);">
+   <figcaption>Miffy</figcaption>
+</figure>
+
+<figure class="flex-fig">
+   <img src="images/koala_gallery/niley.jpg" alt="Niley" onclick="myFunction(this);">
+   <figcaption>Niley</figcaption>
+</figure>
+
+<figure class="flex-fig">
+   <img src="images/koala_gallery/nooka_and_baby.jpg" alt="Nooka and Baby" onclick="myFunction(this);">
+   <figcaption>Nooka and Baby</figcaption>
+</figure>
+
+</div>
+
+<div class="container">
+   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+   <img id="expandedImg" style="width:100%">
+   <div id="imgtext"></div>
+ </div>
+ 
+ <script>
+ function myFunction(imgs) {
+   var expandImg = document.getElementById("expandedImg");
+   var imgText = document.getElementById("imgtext");
+   expandImg.src = imgs.src;
+   imgText.innerHTML = imgs.alt;
+   expandImg.parentElement.style.display = "block";
+ }
+ </script>
+<footer>   
+<img class="center" src="images/koala_logo.svg" alt="logo" width="10%" height="10%">
+Copyright 2018 All rights reserved. Australian Koala Foundation
+</footer>
+
+</body>
+</html>

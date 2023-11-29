@@ -1,0 +1,45 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+
+   background-image: url("../../../Images/background/ecailles-bground.jpg");
+   background-color: aliceblue;
+   font-family: 'Roboto Serif',"Times New Roman",serif;
+   font-size: 20px;
+   color: steelblue;
+}
+
+nav a {
+   color: navy;   
+   text-decoration: none;
+}
+
+nav a:hover {
+   background-color: black;
+}
+
+.active {
+  background-color: navy;
+}
+
+
+h1 {
+   color: #483D8B;
+   text-align:center;
+   font-size: 2.5em;
+   font-family: 'Red Hat Mono', monospace;
+}
+
+h2 {
+   color: maroon;
+   text-align:center;
+   font-size: 2em;
+   font-family: 'Macondo', cursive;
+}
+
+img {
+   padding: 5px;
+}
+

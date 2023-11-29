@@ -1,0 +1,124 @@
+* {
+   box-sizing: border-box;
+}
+
+nav {
+   padding: 5px;
+}
+
+body {   
+   background-color: aliceblue;
+   font-family: 'Roboto Serif',Tahoma,serif;
+   font-size: 20px;
+   color: steelblue;
+}
+
+h1 {
+   color: #483D8B;
+   text-align:center;
+   font-size: 3em;
+   font-family: 'Aboreto', cursive;
+}
+
+h2 {
+   color: maroon;
+   text-align:center;
+   font-size: 2em;
+   font-family: 'Share', cursive;
+}
+
+h3 {
+   color: darkgreen;
+   font-size: 1.5em;
+   font-family: 'Amatic SC',sans-serif;
+}
+
+#title {
+   font-family: 'Aboreto', cursive;
+   font-weight: bold;
+   color: black;
+}
+
+#construction {
+   color: gold;
+   text-align: center;
+   font-size: 1.5em;
+   font-family: 'Black Ops One', "Times New Roman", serif;
+   text-shadow: 2px 2px 5px black;
+}
+
+aside {
+   border: 8px outset darkgreen;
+   float: right;
+   width: 40%;
+   padding: 10px;
+   margin-bottom: 10px;
+   font-size: 0.8em;
+   color: black;
+   text-align: center;
+   background-color: wheat;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+   color: blue;
+}
+
+.clearfix::after {
+   content: "";
+   clear: both;
+   display: table;
+}
+
+.img-left {
+   float: left;
+   padding: 5px;
+   margin: 10px;
+}
+
+.img-right {
+   float: right;
+   padding: 5px;
+   margin: 10px;
+}
+
+.center, #white {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#white {
+   border: 6px groove white;
+   padding: 1px;
+}
+
+.active {
+   background-color: lightblue;
+   padding: 5px;
+}
+
+div.adoption {
+   margin: 5px;
+   border: 1px solid #ccc;
+   float: left;
+   width: 300px;
+}
+
+div.adoption:hover {
+   border: 1px solid #777;
+}
+
+div.adoption img {
+   width: 100%;
+   height: auto;
+}
+
+div.desc {
+   padding: 15px;
+   text-align: center;
+}

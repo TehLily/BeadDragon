@@ -1,0 +1,35 @@
+
+.box {
+    flex: 100%;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+nav {
+    border: 3px;
+}
+
+.midline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: steelblue;
+}
+
+dl {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+dt {
+    display: flex;
+    padding: 10px;
+}
+
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!doctype html>
+<html>
+
+<head>
+   <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-C8F1LKJXYL"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-C8F1LKJXYL');
+   </script>
+   <meta charset="UTF-8">
+   <title>Unit 2 - Embedding Phone Video</title>
+   <!--author: Lily Ellison
+	date: September 13, 2023-->
+   <meta name:"description" content="Example of embedding a video recorded on a phone.">
+   <meta name="keywords"
+      content="WDV351, DMACC, Web Development, Website Application Components, Homework, Unit 2, Phone, Video, Lily Ellison">
+
+   <link rel="stylesheet" href="../../css/main_style.css">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Macondo&family=Red+Hat+Mono&family=Roboto+Serif:opsz@8..144&display=swap"
+      rel="stylesheet">
+
+   <style>
+      * {
+         box-sizing: border-box;
+      }
+
+      .box {
+         flex: 100%;
+      }
+
+      @media only screen and (min-width: 600px) {
+         .box {
+            flex: 50%;
+         }
+      }
+
+      @media screen and (min-width: 768px) {
+         .box {
+            flex: 40%;
+         }
+      }
+
+      @media screen and (min-width: 992px) {
+         .box {
+            flex: 30%;
+         }
+      }
+
+      @media screen and (min-width: 1200px) {
+         .box {
+            flex: 20%;
+         }
+      }
+
+      .center {
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+      }
+   </style>
+
+</head>
+
+<body>
+   <div class="box">
+      <h1>Unit 2</h1>
+
+      <h2>Assignment 3: Phone Video</h2>
+
+      <p style="text-align: center">This is known as a Kaleidocycle. The pattern is Summer Sensations, designed by
+         DiMarca Online and beaded by me, Lily Ellison. Instead of using the Miyuki Delica beads in the colors listed in
+         the pattern, I used Toho Aiko cyclinder beads in colors I had in my stash. I tried to use colors close to the
+         ones listed on the original pattern, but could not always accommodate. This video has no sound and is only
+         meant to give a demonstration of how the piece moves.</p>
+
+      <p style="text-align: center"> As an MP4:</p>
+      <video class="center" width="640" height="360" controls>
+         <source src="Images/KaleidocycleDemoNoSound.mp4" type=video/mp4>
+      </video>
+
+      <p style="text-align: center"> As a WebM:</p>
+      <video class="center" width="640" height="360" controls>
+         <source src="Images/KaleidocycleDemoNoSound.webm" type=video/webm>
+      </video>
+
+   </div>
+
+   <footer style="margin: 20px">
+      <a href="../wdv351Homework.html">Return to WDV351 Homework Page</a>
+      <a href="../../index.html">Return to The Bead Dragon</a>
+   </footer>
+
+</body>
+
+</html>

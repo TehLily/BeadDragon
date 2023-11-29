@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C8F1LKJXYL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-C8F1LKJXYL");
+    </script>
+    <meta charset="UTF-8" />
+    <title>Unit 4 - Donations</title>
+    <!--author: Lily Ellison
+	date: September 23, 2023-->
+    <meta name:"description" content="Donations.">
+    <meta name="keywords"
+        content="WDV351, DMACC, Web Development, Website Application Components, Homework, Unit 4, PayPal, Donations, Buttons, Lily Ellison" />
+
+    <link rel="stylesheet" href="../../css/main_style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Macondo&family=Red+Hat+Mono&family=Roboto+Serif:opsz@8..144&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .box {
+            flex: 100%;
+        }
+        @media only screen and (min-width: 200px) {
+            .box {
+                flex: 50%;
+            }
+        }
+        @media screen and (min-width: 400px) {
+            .box {
+                flex: 40%;
+            }
+        }
+        @media screen and (min-width: 600px) {
+            .box {
+                flex: 30%;
+            }
+        }
+        @media screen and (min-width: 800px) {
+            .box {
+                flex: 20%;
+            }
+        }
+        @media screen and (min-width: 1000px) {
+            .box {
+                flex: 10%;
+            }
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures optimal rendering on mobile devices. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Optimal Internet Explorer compatibility -->
+</head>
+<body>
+    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+    <h1>Unit 4</h1>
+    <h2>Donations</h2>
+    <div class="flex-container">
+        <div class="box">
+            $10 Fixed Donation:
+            <div class="maroon" style="margin:auto" >
+                Click this button to donate $10:
+                <div id="donate-button-container">
+                    <div id="donate-button01"></div>
+                    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                    <script>
+                    PayPal.Donation.Button({
+                    env:'sandbox',
+                    hosted_button_id:'CBJVC6QAPBW5L',
+                    image: {
+                    src:'https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif',
+                    alt:'Donate with PayPal button',
+                    title:'PayPal - The safer, easier way to pay online!',
+                    }
+                    }).render('#donate-button01');
+                    </script>
+                    </div>
+                    
+                    
+            </div>
+        </div>
+        <div class="box">
+            Choose your Donation:
+            <div class="maroon" style="margin:auto" >
+                Click this button to donate $5, $10, or $20:
+                <div id="donate-button-container">
+                    <div id="donate-button02"></div>
+                    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                    <script>
+                    PayPal.Donation.Button({
+                    env:'sandbox',
+                    hosted_button_id:'J66QJBPZEGTLQ',
+                    image: {
+                    src:'https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif',
+                    alt:'Donate with PayPal button',
+                    title:'PayPal - The safer, easier way to pay online!',
+                    }
+                    }).render('#donate-button02');
+                    </script>
+                    </div>
+                    
+                    
+            
+            </div>
+        </div>
+        <div class="box">
+            Recurring Donation of Any Amount:
+            <div class="maroon" style="margin:auto" >
+                Click this button to make a recurring donation of any amount:
+                <div id="donate-button-container">
+                    <div id="donate-button03"></div>
+                    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                    <script>
+                    PayPal.Donation.Button({
+                    env:'sandbox',
+                    hosted_button_id:'6AT3EATZL4PFG',
+                    image: {
+                    src:'https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif',
+                    alt:'Donate with PayPal button',
+                    title:'PayPal - The safer, easier way to pay online!',
+                    }
+                    }).render('#donate-button03');
+                    </script>
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+
+    <footer style="margin: 20px">
+        <a href="../wdv351Homework.html">Return to WDV351 Homework Page</a>
+        <a href="../../index.html">Return to The Bead Dragon</a>
+    </footer>
+</body>
+
+</html>

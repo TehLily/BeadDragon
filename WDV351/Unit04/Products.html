@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C8F1LKJXYL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-C8F1LKJXYL");
+    </script>
+    <meta charset="UTF-8" />
+    <title>Unit 4 - Add To Cart</title>
+    <!--author: Lily Ellison
+	date: September 25, 2023-->
+    <meta name:"description" content="Products to Add to PayPal Cart.">
+    <meta name="keywords"
+        content="WDV351, DMACC, Web Development, Website Application Components, Homework, Unit 4, PayPal, Products, Cart, Buttons, Lily Ellison" />
+
+    <link rel="stylesheet" href="../../css/main_style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Macondo&family=Red+Hat+Mono&family=Roboto+Serif:opsz@8..144&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .box {
+            flex: 100%;
+        }
+        @media only screen and (min-width: 200px) {
+            .box {
+                flex: 50%;
+            }
+        }
+        @media screen and (min-width: 400px) {
+            .box {
+                flex: 40%;
+            }
+        }
+        @media screen and (min-width: 600px) {
+            .box {
+                flex: 30%;
+            }
+        }
+        @media screen and (min-width: 800px) {
+            .box {
+                flex: 20%;
+            }
+        }
+        @media screen and (min-width: 1000px) {
+            .box {
+                flex: 10%;
+            }
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures optimal rendering on mobile devices. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Optimal Internet Explorer compatibility -->
+</head>
+<body>
+    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+    <h1>Unit 4</h1>
+    <h2>Products to Add to PayPal Cart:</h2>
+    <div class="flex-container">
+        <div class="box">
+            Red Beta Fish
+            <div class="maroon" style="margin:auto" >
+                <img src="Images/betaFish.jpg" width="250px" alt="Red Beta Fish designed by Sheila Root."></img>
+                <p>A three-dimensional beta fish beaded with size 11/0 seed beads in reds and whites. Designed by Sheila Root.</p>
+                <p>Cost: $50.00</p>
+                Button to add to cart.
+            </div>
+        </div>
+        <div class="box">
+            Sea Jelly Inspired Jewelry
+            <div class="maroon" style="margin:auto" >
+                <img src="Images/Jellies/multiJellies.jpg" width="250px" alt="Sea Jelly earrings and necklace"></img>
+                <p>Necklace and/or earrings inspired by the ocean's jellies. Please select if you would like earrings ($30), a necklace ($50), or a set ($75). Designed by Tammy Lawson.</p>
+                Drop down menu with prices.
+                
+            </div>
+        </div>
+        <div class="box">
+            Item 3:
+            <div class="maroon" style="margin:auto" >
+                Discription    
+            </div>
+        </div>
+        <div class="box">
+            Item 4:
+            <div class="maroon" style="margin:auto" >
+                Discription    
+            </div>
+        </div>
+        <div class="box">
+            Item 5:
+            <div class="maroon" style="margin:auto" >
+                Discription    
+            </div>
+        </div>
+    </div>
+
+    <footer style="margin: 20px">
+        <a href="../wdv351Homework.html">Return to WDV351 Homework Page</a>
+        <a href="../../index.html">Return to The Bead Dragon</a>
+    </footer>
+</body>
+
+</html>

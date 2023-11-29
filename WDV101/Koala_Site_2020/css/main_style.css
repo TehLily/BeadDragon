@@ -1,0 +1,229 @@
+* {
+   box-sizing: border-box;
+}
+
+.active {
+   background-color: lightslategray;
+}
+
+body {
+
+   background-image: url("../images/bubbles.jpg");
+   
+      background-color: azure;
+   font-family: 'Chivo',Tohoma,sans-serif;
+   font-size: 20px;
+   color: darkolivegreen;
+}
+
+h1 {
+   color: #2F4F4F;
+   text-align:center;
+   font-size: 2.5em;
+   font-family: 'Patua One', serif;
+}
+
+h2 {
+   color: hsla(26, 100%, 18%, 1);
+   text-align:center;
+   font-size: 1.6em;
+   font-family: 'Roboto Slab', cursive;
+}
+
+h3 {
+   font-size: 1.35em;
+   font-family: 'Neucha', cursive;
+}
+
+.clearfix::after {
+   content: "";
+   clear: both;
+   display: table;
+}
+
+.img-container {
+   float: left;
+   width: 33.33%;
+   padding: 5px;   
+}
+
+.img-two {
+   float: left;
+   width: 66.66%;
+   padding: 5px;   
+}
+
+.img-right {
+   float: right;
+}
+
+.img-left {
+   float: left;
+   padding: 5px;
+   margin: 10px;
+}
+
+.white {
+   border: 8px groove white;
+   float: right;
+   margin: 5px;
+   padding: none;
+}
+
+.green {
+   border: 8px groove green;
+   float: left;
+   margin: 5px;
+   padding: 5px;
+}
+
+.red {
+   border: 10px double firebrick;
+   float: left;
+   margin: auto;
+   padding: 8px;
+   background-color: gainsboro;
+}
+
+.wood-shadow {
+   box-shadow: 10px 10px saddlebrown;
+}
+
+.center {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 10px;
+}
+
+.listbox {
+   border: 3px solid green;
+   padding: 4px;
+   margin: 8px;
+}
+
+.flex-form {
+   display: flex;
+   flex-wrap: wrap;
+   margin-bottom:0.3em;
+   justify-content: center;
+   align-items: center;
+}
+
+.flex-form label {
+   text-align: left;
+   flex: 1 0 100px;
+   max-width: 200px;
+   margin-top: 0.5em;
+   margin-right:0.5em;
+}	
+  				
+.flex-form input, select, textarea {
+   flex: .8 0 100px  ;
+}
+  					
+.flex-radio  {
+   display:flex;
+   flex-direction: column;
+   justify-content: center   ;
+   margin-left:1.8em;
+   margin-top:1.2em;
+   margin-bottom:1.2em;
+}
+  				
+.flex-radio  label {
+   margin-right:1.8em;
+   margin-left:.2em;
+}
+
+.flex-buttons  {
+   display:flex;
+   justify-content: space-around;
+   padding: 3px;
+   margin: 5px 100px;
+}
+	 
+textarea {
+   height:80px;
+}
+		
+.flex-container {
+   display: flex;
+   flex-direction: column;
+   
+}
+
+.flex-gallery {
+   display: flex;
+   flex-wrap: wrap;
+   border: 2px groove black;
+   padding: 30px;
+}
+
+.flex-fig {
+   background-color: linen;
+   width: 100%;
+   flex-direction: column;
+}
+
+@media only screen and (min-width: 600px) {
+   .flex-fig {
+      flex: 40%;
+      flex-direction: column;
+      background-color: rgb(214, 189, 189);
+
+}
+}
+
+@media screen and (min-width: 768px) {
+   .flex-fig {
+      flex: 30%;
+      flex-direction: row;
+      background-color: aliceblue;
+}
+}
+
+@media screen and (min-width: 992px) {
+
+   .flex-form label {
+      text-align: right;
+      flex: 1 0 100px;
+      max-width: 200px;
+      margin-top: 0.5em;
+      margin-right:0.5em;
+}
+   .flex-radio  {
+      display:flex;
+      flex-direction: row;
+      justify-content: center   ;
+      margin-left:1.8em;
+      margin-top:1.2em;
+      margin-bottom:1.2em;
+}
+}
+
+@media screen and (min-width: 1200px) {
+   
+}
+.flex-fig img {
+   border-radius: 10px;
+   width: 100%;
+   cursor: pointer;
+}
+
+.closebtn {
+   position: absolute;
+   top: 10px;
+   right: 15px;
+   color: white;
+   font-size: 35px;
+   cursor: pointer;
+}
+
+#imgtext {
+   position: absolute;
+   bottom: 15px;
+   left: 15px;
+   color: white;
+   font-size: 20px;
+ }

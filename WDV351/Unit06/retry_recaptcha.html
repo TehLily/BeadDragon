@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reCAPTCHA V3 Demo</title>
+        <!--author: Lily Ellison
+	date: November 6, 2023-->
+    <meta name:"description" content="Demo of reCAPTCHA.">
+    <meta name="keywords"
+        content="WDV351, DMACC, Web Development, Website Application Components, Homework, Unit 6, reCAPTCHA, Lily Ellison" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../../css/main_style.css" />
+    <link rel="stylesheet" href="../Unit05/TableauStyle.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Macondo&family=Red+Hat+Mono&family=Roboto+Serif:opsz@8..144&display=swap"
+        rel="stylesheet" />-->
+        <!-- <script src="https://www.google.com/recaptcha/enterprise.js?render=6Ld2Y_8oAAAAAFgHgBfxhRHg8nthCFmjq4Heeyv9" async defer></script>  -->
+        
+        
+    </head>
+    
+    <body>
+        <div class="container">
+            <br>
+            <h1 class="text-center">Unit 6</h1>
+            <br>
+            <h2>reCAPTCHA</h2>
+            <form method="post" id="contact" class="contact">
+                <input type="hidden" name="recaptchaResponse" id="recaptchaResponse">
+                <div class="formfields">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-element">
+                                <input type="text" name="fname" id="fname" class="form-control form-control-lg" placeholder="First Name *">
+                                <div class="invalid-feedback">
+                                    Please enter your first name.
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-element">
+                                <input type="text" name="lname" id="lname" class="form-control form-control-lg" placeholder="Last Name *">
+                                <div class="invalid-feedback">
+                                    Please enter your last name.
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="form-element">
+                        <input type="text" name="email" id="email" class="form-control form-control-lg" placeholder="Email Address *">
+                        <div class="invalid-feedback">
+                            Please enter your email address.
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-element">
+                        <textarea name="message" id="message" cols="30" rows="10" class="form-control form-control-lg" placeholder="How can I help you? *"></textarea>
+                        <div class="invalid-feedback">
+                            Please enter your message.
+                        </div>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-lg btn-primary" id="submit-button">Send Message</button>
+                </div>
+                <div id="alert"></div>
+            </form>
+        </div>
+        
+    </body>
+    
+    <!-- <script src="retry.js"></script> -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcwjgMpAAAAAH04rtHfrXziKBpwOeM7624sZ2_C"></script>
+    <script src="init.js"></script>
+    
+    <!-- <p>Click button to submit reCAPTCHA.</p>
+        <button class="g-recaptcha" 
+        data-sitekey="6Ld2Y_8oAAAAAFgHgBfxhRHg8nthCFmjq4Heeyv9" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit
+    </button> -->

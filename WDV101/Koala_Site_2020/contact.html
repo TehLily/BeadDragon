@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Koala Contact Page</title>
+<!--author: Lily Ellison
+	date: October 18, 2022-->
+<meta name="description" content="contact for Koala Bear National Information Center.">
+<meta name="keywords" content="koala, koala bear, information center, foundation, contact, KBNIC">
+
+<link rel="stylesheet" href="css/main_style.css">
+<link rel="stylesheet" href="css/structure.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo&family=Neucha&family=Patua+One&family=Roboto+Slab&display=swap" rel="stylesheet"> 
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<style>
+
+
+
+legend {
+   font-family: 'brush script MT', cursive;
+   font-size: 50px;
+   border-bottom: 5px dotted;
+}
+
+fieldset {
+   margin: 20px;
+   border: hidden;
+}
+
+fieldset div {
+   margin: 5px 0;
+}
+
+</style> 
+
+</head>
+<body>
+
+<header>
+<h1>Koala Bear National Information Center</h1>
+
+<nav class="clearfix">
+<a href="index.html">Home</a>
+<a href="save_koalas.html">Save Koalas!</a>
+<a href="faq.html">FAQ</a>
+<a href="gallery.html">Gallery</a>
+<a href="adopt.html">Adopt</a>
+<a class="active" href="contact.html">Contact Us</a>
+</nav>
+
+<img src="images/koala_banner.jpg" alt="Koala Banner" width="100%">
+
+</header>
+
+
+<form id="contact_form" method="post" action="form_response_basic.php">
+
+<legend>Contact Us</legend>
+
+<fieldset>
+   <div>
+
+<img class="img-right" style="border-radius: 15px" src="images/koala_reach.jpg" alt="Koala Reaching" width="640" height="427">
+
+      <label for="firstname">First Name</label>
+      <input id="firstname" name="firstname" type="text">
+   </div>
+		
+   <div>
+      <label for="lastname">Last Name</label>
+      <input id="lastname" name="lastname" type="text">
+   </div>
+
+   <div>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="text">
+   </div>
+
+   <div>
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="text">
+   </div>
+
+
+ <p>I would like information on...</p>
+		   <input type="checkbox" id="option1" name="option1" value="General">
+  <label for="option1"> Koalas in general</label><br>
+  <input type="checkbox" id="option2" name="option2" value="KoalaArmy">
+  <label for="option2"> Joining the Koala Army</label><br>
+  <input type="checkbox" id="option3" name="option3" value="Donating">
+  <label for="option3"> Donating</label><br>
+  <input type="checkbox" id="option4" name="option4" value="Adoption">
+  <label for="option4"> Adoption</label><br>
+  <input type="checkbox" id="option5" name="option5" value="Other">
+  <label for="option5"> Other</label><br>
+
+<p>My preferred method of contact is...</p>
+		
+   <input type="radio" id="email" name="method" value="Email">
+      <label for="email">Email</label><br>
+
+   <input type="radio" id="phone" name="method" value="PhoneCall">
+      <label for="phone">Phone Call</label><br>
+
+   <input type="radio" id="text" name="method" value="TextMessage">
+      <label for="text">Text Message</label><br><br>
+    
+	<div>
+			<input type="submit" id="button" name="button" value="Submit" class="g-recaptcha" data-sitekey="6LcwjgMpAAAAAH04rtHfrXziKBpwOeM7624sZ2_C" data-callback="onSubmit" data-action="submit">
+			<input type="reset" id="button" name="button" value="Reset">
+		</div>
+
+</fieldset>
+</form>
+<div class="clearfix">
+
+   <script>
+      function onSubmit(token) {
+        document.getElementById("contact_form").submit();
+      }
+    </script>
+
+</div>
+
+<footer>   
+<img class="center" src="images/koala_logo.svg" alt="logo" width="10%" height="10%">
+Copyright 2018 All rights reserved. Australian Koala Foundation
+</footer>
+
+</body>
+</html>

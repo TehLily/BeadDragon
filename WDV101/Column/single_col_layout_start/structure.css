@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* CSS Structure for single column layout */
+
+	
+/*  The universal selector is used to apply to all. Some browsers, bu default, add a margin and padding value. This is undesirable in our layout. The margin and properties value of 0 then "zeros out" any default browser value.*/
+
+*  { 
+	margin:0;
+	padding:0;
+	}
+	
+body	 {
+		background-color:beige;
+		}
+			
+nav  {
+	font-family: Helvetical, Ariel, sans-serif;
+	background-color: black;
+	padding: 10px;
+	  }
+
+nav li {
+		display:inline;
+	    padding-right:40px;
+		}
+
+nav a  {
+		color:white;
+		text-decoration:none;
+		}
+
+header {
+   background-color:yellow;
+   padding:15px;
+}
+
+main {
+   background-color:lightblue;
+   padding:15px;
+}
+
+
+footer {
+   background-color:black;
+   color:white;
+   padding:5px;
+}
+
+#container {
+   background-color:white;
+   margin:0 auto;
+   width:960px;
+   border:2px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

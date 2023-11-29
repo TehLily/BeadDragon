@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Unit 8 - Cloud Computing</title>
+    <!--author: Lily Ellison
+	date: November 10, 2023-->
+    <meta name:"description" content="Explanation of Cloud Computing.">
+    <meta name="keywords"
+        content="WDV351, DMACC, Web Development, Website Application Components, Homework, Unit 8, Lily Ellison, Cloud, Cloud Computing, AWS, Amazon Web Services, Google Cloud" />
+
+    <link rel="stylesheet" href="../../css/main_style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Macondo&family=Red+Hat+Mono&family=Roboto+Serif:opsz@8..144&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .box {
+            flex: 100%;
+        }
+        .details {
+            border: 4px solid maroon;
+            text-align: left;
+            margin: 10px;
+            padding: 5px;
+        }
+        dt {
+            font-weight: bold;
+        }
+        @media only screen and (min-width: 600px) {
+            .box {
+                flex: 50%;
+            }
+        }
+        @media screen and (min-width: 768px) {
+            .box {
+                flex: 40%;
+            }
+        }
+        @media screen and (min-width: 992px) {
+            .box {
+                flex: 30%;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            .box {
+                flex: 20%;
+            }
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Unit 8</h1>
+    <h2>Cloud Computing</h2>
+    <div class="flex-container">
+        <div class="box">
+            
+            <p>Cloud computing uses the internet to provide computing resources like servers, apps, storage, dev tools, networking, etc from a remote data center. A Cloud Service Provider (CSP) like Amazon Web Services (AWS), Microsoft Azure, Google Cloud, or IBM Cloud manages the data center and provides resources either based on a monthly subscription or on a usage basis. This can help lower costs spent on IT, have faster implementation, and improves ability to scale.</p>
+            
+            <p>There are several models of cloud services that can be provided.</p>
+
+            <div class="details">
+            <dl>
+                <dt>Software as a Service (SaaS)</dt>
+                    <dd>Delivers software to users and supports all application aspects, except user data</dd>
+                    <dd>Examples: SalesForce, Blackboard, DocuSign</dd>
+                <dt>Infrastructure as a Service (IaaS)</dt>
+                    <dd>Provides access to resources like servers, networking, storage, and virtualization to users on demand</dd>
+                    <dd>Examples: AWS, Rackspace, Google Compute Engine (GCE)</dd>
+                <dt>Platform as a Service (PaaS)</dt>
+                    <dd>Provides the complete platform for development, implementation, and management of applications</dd>
+                    <dd>Examples: Java runtimes, mySQL, Tomcat server</dd>
+                <dt>Backend or Mobile Backend as a Service (BaaS/MBaaS)</dt>
+                    <dd>Provides web and mobile app backend support like user management, social media integration, and notifications</dd>
+                    <dd>Examples: Amplify on AWS, Firebase on Google Cloud, Backendless</dd>
+            </dl>
+            </div>
+        
+            <p>
+                I used Amazon Web Services (AWS) to build and host <a href="https://dev.d1fy4ksdg2zle8.amplifyapp.com/">this</a> dynamic web page, that accepts a name (first and last), calls an Application Programming Interface (API), and returns an alert with a greeting, while also adding the name to a database.
+            </p>
+            Here is a diagram of how this process works (diagram provided by AWS tutorial): <br>
+            <img src="Images/aws_diagram.png" alt="Diagram of flow of information for website" height="300px">
+        
+        </div>
+    </div>
+
+    <footer style="margin: 20px">
+        <a href="../wdv351Homework.html">Return to WDV351 Homework Page</a>
+        <a href="../../index.html">Return to The Bead Dragon</a>
+    </footer>
+</body>
+
+</html>
